@@ -17,6 +17,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.0",
     "dotenv": "^16.6.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "openzeppelin": "^1.0.0"
   }
 }
