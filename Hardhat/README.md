@@ -23,3 +23,11 @@ npx hardhat run scripts/deploy.js --network localhost
 
 in another terminal 
 npm install @openzeppelin/contracts@4.9.0
+
+To compile 
+npx hardhat compile
+
+
+
+To deploy 
+npx hardhat run scripts/deploy.js --network localhost
