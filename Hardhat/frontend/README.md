@@ -1,12 +1,15 @@
-# React + Vite
+used React +ether.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+imported MyToken.json from hardhatcontract to connect the contract with frontend 
 
-Currently, two official plugins are available:
+u can get Mytoken.json from hardhat contract when u compile and run the contract by running 
+ cd hardhatcontract
+ npm i
+ npx hardhat compile
+ npx hardhat run scripts/deploy.js --network localhost
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ if got some issue with openzepplin run 
+ npm install @openzeppelin/contracts@4.9.0
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ u will find a new folder formed after deployment 
+ hardhatcontracts/artifacts/contract/MyToken.json  => copy the file and paste in frontend required directory
