@@ -1,1 +1,30 @@
 // Continous integration 
+name: Hardhat Test Workflow
+
+on:
+  push:
+    branches:
+      - main  # Trigger this when you push to main branch
+  pull_request:
+    branches:
+      - main  # Trigger on PR to main branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Run this job on an Ubuntu runner
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Checkout the repo
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # Choose the version that works for your project
+
+      - name: Install dependencies
+        run: npm install  # Install your Hardhat dependencies like hardhat, ethers, etc.
+
+      - name: Run tests
+        run: npx hardhat test  # Run Hardhat's test command (this runs tests in the "test" folder)
+
